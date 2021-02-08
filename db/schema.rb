@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_23_121762) do
+ActiveRecord::Schema.define(version: 2021_02_08_111116) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -889,6 +889,7 @@ ActiveRecord::Schema.define(version: 2020_09_23_121762) do
     t.boolean "rich_text_editor_in_public_views", default: false
     t.jsonb "admin_terms_of_use_body"
     t.string "time_zone", limit: 255, default: "UTC"
+    t.string "polis_site_id"
     t.index ["host"], name: "index_decidim_organizations_on_host", unique: true
     t.index ["name"], name: "index_decidim_organizations_on_name", unique: true
   end
