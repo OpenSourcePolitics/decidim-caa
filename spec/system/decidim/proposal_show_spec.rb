@@ -32,7 +32,7 @@ describe "Show a Proposal", type: :system do
 
           it "has a link to answer to the proposal at the admin" do
             within ".topbar" do
-              expect(page).to have_link("Answer", href: /.*admin.*proposal-answer.*/)
+              expect(page).to have_link("Responder", href: /.*admin.*proposal-answer.*/)
             end
           end
         end
@@ -42,7 +42,7 @@ describe "Show a Proposal", type: :system do
 
           it "does not have a link to answer the proposal at the admin" do
             within ".topbar" do
-              expect(page).not_to have_link("Answer")
+              expect(page).not_to have_link("Responder")
             end
           end
         end
