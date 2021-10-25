@@ -1,0 +1,16 @@
+---
+en:
+  decidim:
+    proposals:
+      proposals:
+        show:
+          answer: Responder
+          back_to: Volver
+          back_to_list: Volver al listado
+          changes_at_title: Modificacions sobre "{%title}"
+          comments: comentarios
+          edit_proposal: Modificar
+  layouts:
+    decidim:
+      footer:
+        download_open_data: Datos abiertos
