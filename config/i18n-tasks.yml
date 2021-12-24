@@ -95,6 +95,9 @@ ignore_missing:
  - decidim.verifications.authorizations.first_login.actions.osp_authorization_workflow
  - activemodel.attributes.osp_authorization_handler.*
  - activemodel.attributes.participatory_process.private_space
+ - decidim.accessibility.skip_button
+ - layouts.decidim.social_media_links.*
+
 
 # Consider these keys used:
 ignore_unused:
