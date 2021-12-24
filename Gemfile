@@ -9,8 +9,8 @@ ruby RUBY_VERSION
 gem "decidim", git: "https://github.com/decidim/decidim.git", branch: DECIDIM_VERSION
 
 gem "decidim-decidim_awesome", "~> 0.7.0"
-gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer.git", branch: "master"
 gem "decidim-polis", git: "https://github.com/OpenSourcePolitics/decidim-polis", branch: "0.24.3"
+gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer.git", branch: "master"
 
 gem "bootsnap", "~> 1.4"
 
@@ -28,9 +28,9 @@ gem "letter_opener_web", "~> 1.3"
 gem "sprockets", "~> 3.7"
 
 gem "activejob-uniqueness", require: "active_job/uniqueness/sidekiq_patch"
+gem "deepl-rb", require: "deepl"
 gem "fog-aws"
 gem "sys-filesystem"
-gem "deepl-rb", require: "deepl"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
