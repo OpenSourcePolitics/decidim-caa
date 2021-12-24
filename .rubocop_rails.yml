@@ -79,3 +79,7 @@ Rails/Validation:
 Rails/FilePath:
   Exclude:
     - config/**/*.rb
+
+RSpec/MultipleMemoizedHelpers:
+  Exclude:
+    - spec/**/*_spec.rb

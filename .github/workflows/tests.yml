@@ -1,19 +1,10 @@
 name: Tests
-on:
-  push:
-    branches:
-      - develop
-      - master
-      - release/*
-      - "*-stable"
-  pull_request:
-    branches-ignore:
-      - "chore/l10n*"
+on: "push"
 
 env:
   CI: "true"
   SIMPLECOV: "true"
-  RUBY_VERSION: 2.6.3
+  RUBY_VERSION: 2.7.1
 
 jobs:
   tests:
