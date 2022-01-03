@@ -29,15 +29,15 @@ module Decidim
 
         expect(Decidim::MachineTranslationFieldsJob)
           .to have_been_enqueued
-                .on_queue("default")
-                .exactly(2).times
-                .with(
-                  process,
-                  "title",
-                  "Updated Title",
-                  kind_of(String),
-                  current_locale
-                )
+          .on_queue("default")
+          .exactly(2).times
+          .with(
+            process,
+            "title",
+            "Updated Title",
+            kind_of(String),
+            current_locale
+          )
       end
     end
 
@@ -56,7 +56,7 @@ module Decidim
         )
         expect(Decidim::MachineTranslationFieldsJob)
           .not_to have_been_enqueued
-                    .on_queue("default")
+          .on_queue("default")
       end
     end
 
@@ -75,15 +75,15 @@ module Decidim
         )
         expect(Decidim::MachineTranslationFieldsJob)
           .to have_been_enqueued
-                .on_queue("default")
-                .exactly(1).times
-                .with(
-                  process,
-                  "title",
-                  "New Title",
-                  "es",
-                  current_locale
-                )
+          .on_queue("default")
+          .exactly(1).times
+          .with(
+            process,
+            "title",
+            "New Title",
+            "es",
+            current_locale
+          )
       end
     end
 
