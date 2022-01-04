@@ -9,6 +9,9 @@ fr:
       participatory_process:
         private_space: Espace privé
   decidim:
+    admin:
+      menu:
+        decidim_polis: Pol.is
     authorization_handlers:
       osp_authorization_handler:
         explanation: Vérifier votre identité en saisissant un numéro unique
@@ -19,15 +22,6 @@ fr:
         name: Formulaire de vérification d'identité
       osp_authorization_workflow:
         name: Procédure d'autorisation
-    proposals:
-      proposals:
-        show:
-          answer: Answer
-          back_to: Retour
-          back_to_list: Retour à la liste
-          changes_at_title: Changements à
-          comments: Commentaires
-          edit_proposal: Editer
     verifications:
       authorizations:
         first_login:

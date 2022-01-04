@@ -1,15 +1,9 @@
 ---
 en:
   decidim:
-    proposals:
-      proposals:
-        show:
-          answer: Answer
-          back_to: Retour
-          back_to_list: Retour à la liste
-          changes_at_title: Changements à
-          comments: Commentaires
-          edit_proposal: Editer
+    admin:
+      menu:
+        decidim_polis: Pol.is
   layouts:
     decidim:
       footer:

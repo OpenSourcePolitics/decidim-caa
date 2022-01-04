@@ -1,6 +1,9 @@
 ---
 es:
   decidim:
+    admin:
+      menu:
+        decidim_polis: Pol.is
     proposals:
       proposals:
         show:

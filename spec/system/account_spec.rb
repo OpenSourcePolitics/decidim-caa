@@ -16,8 +16,7 @@ describe "Account", type: :system do
     it "shows the account form when clicking on the menu" do
       visit decidim.root_path
 
-      within ".topbar__user__logged" do
-        find("a", text: user.name).hover
+      within_user_menu do
         find("a", text: "My account").click
       end
 
@@ -49,8 +48,7 @@ describe "Account", type: :system do
 
         user.reload
 
-        within ".topbar__user__logged" do
-          find("a", text: user.name).hover
+        within_user_menu do
           find("a", text: "My public profile").click
         end
 
